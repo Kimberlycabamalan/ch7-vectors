@@ -4,7 +4,8 @@
 first.ten <- c(10:20)
 
 # Create a vector `next.ten` that has the values 21 through 30 in it (using the seq operator)
-next.ten <- c(21:30)
+next.ten <- seq(21,30)
+print(next.ten)
 
 # Create a vector `all.numbers` by combining the vectors `first.ten` and `next.ten`
 all.numbers <- c(first.ten, next.ten)
@@ -28,6 +29,4 @@ odd <- seq(1, 100, 2)
 print (odd)
 
 # Using the `all` and `%%` operators, confirm that all of the numbers in your `odd` vector are odd
-tr <- odd%%2
-print (tr)
 print (all(odd%%2==1))
