@@ -3,7 +3,6 @@
 # Create a vector `x` that the numbers 5,2,6,2,1,7
 x<- c(5,2,6,2,1,7)
 
-
 # Create a vector `y` that has the numbers 2,3
 y <- c(2, 3)
 
@@ -14,14 +13,15 @@ z <- x+y
 first.three <- c(z[1:3])
 
 # Create a vector `small` that has the values of `z` that are less than 5
-small <- z < 5
+small <- z[z<5]
 
 # Create a vector `large` that has the values of `z` that are greater than or equal to 5
-large <- z >= 5
+large <- z[z>=5]
 
 ### Bonus ###
 
 # Replace the values in `z` that are larger than 5 with the number 5
-
+z[z>5] <- 5
 
 # Replace every other value in `z` with the number 0
+z[c(TRUE, FALSE)] <- 0
